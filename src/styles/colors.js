@@ -14,6 +14,7 @@ export default {
   active: '#6ADC00',
   primaryText: 'rgb(28, 154, 174)',
   secondaryText: 'rgb(245, 34, 45)',
+  mainBackground: '#162133',
 
 
   transparent: 'transparent',

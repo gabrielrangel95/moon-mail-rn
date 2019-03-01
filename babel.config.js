@@ -1,8 +1,3 @@
 module.exports = {
-  presets: ['@babel/preset-env', { modules: false }],
-  env: {
-    test: {
-      presets: [['@babel/preset-env']]
-    }
-  }
+  presets: ['module:metro-react-native-babel-preset'],
 };
