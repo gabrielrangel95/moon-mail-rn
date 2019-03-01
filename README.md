@@ -21,6 +21,6 @@ react-native run-android
 ```
 
 
-## Siging up
+## Singing up
 The first screen is a sign up page. You must fill and the filds required.
 A confirmation code will be delivered for your e-mail, for confirm the account, before the first login.
