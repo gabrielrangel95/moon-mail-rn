@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Card, WhiteSpace, WingBlank } from '@ant-design/react-native';
 import {
   MainView,
+  MainScrollView,
   CardBodyContent,
   BodyTitle,
   BodyMetric
@@ -17,69 +18,72 @@ const CampaignMetrics = (props) => {
   const { metrics } = selected;
   return (
     <MainView>
-      <WingBlank size="lg">
-        <WhiteSpace size="lg" />
-        <Card>
-          <Header
-            title="Delivery count metrics"
-          />
-          <Body>
-            <CardBodyContent>
-              <BodyTitle>Messages sent</BodyTitle>
-              <BodyMetric>{metrics.sent}</BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Messages delivered:</BodyTitle>
-              <BodyMetric>{metrics.delivered}</BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Emails opened</BodyTitle>
-              <BodyMetric>{metrics.emailsOpened}</BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Links clicked</BodyTitle>
-              <BodyMetric>{metrics.linksClicked}</BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Complaints</BodyTitle>
-              <BodyMetric secondary>{metrics.complaints}</BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Bounces</BodyTitle>
-              <BodyMetric secondary>{metrics.bounces}</BodyMetric>
-            </CardBodyContent>
-          </Body>
-        </Card>
+      <MainScrollView>
+        <WingBlank size="lg">
+          <WhiteSpace size="lg" />
+          <Card>
+            <Header
+              title="Delivery count metrics"
+            />
+            <Body>
+              <CardBodyContent>
+                <BodyTitle>Messages sent</BodyTitle>
+                <BodyMetric>{metrics.sent}</BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Messages delivered:</BodyTitle>
+                <BodyMetric>{metrics.delivered}</BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Emails opened</BodyTitle>
+                <BodyMetric>{metrics.emailsOpened}</BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Links clicked</BodyTitle>
+                <BodyMetric>{metrics.linksClicked}</BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Complaints</BodyTitle>
+                <BodyMetric secondary>{metrics.complaints}</BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Bounces</BodyTitle>
+                <BodyMetric secondary>{metrics.bounces}</BodyMetric>
+              </CardBodyContent>
+            </Body>
+          </Card>
 
-        <WhiteSpace size="lg" />
-        <Card>
-          <Header
-            title="Delivery rate metrics"
-          />
-          <Body>
-            <CardBodyContent>
-              <BodyTitle>Delivery rate</BodyTitle>
-              <BodyMetric>
-                {metrics.sent.toFixed(1)}
-                %
-              </BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Email open rate</BodyTitle>
-              <BodyMetric>
-                {metrics.openRate.toFixed(1)}
-                %
-              </BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Bounce rate</BodyTitle>
-              <BodyMetric secondary>
-                {metrics.bounceRate.toFixed(1)}
-                %
-              </BodyMetric>
-              <WhiteSpace size="sm" />
-              <BodyTitle>Complaint rate</BodyTitle>
-              <BodyMetric secondary>
-                {metrics.complainRate.toFixed(1)}
-                %
-              </BodyMetric>
-            </CardBodyContent>
-          </Body>
-        </Card>
-      </WingBlank>
+          <WhiteSpace size="lg" />
+          <Card>
+            <Header
+              title="Delivery rate metrics"
+            />
+            <Body>
+              <CardBodyContent>
+                <BodyTitle>Delivery rate</BodyTitle>
+                <BodyMetric>
+                  {metrics.sent.toFixed(1)}
+                  %
+                </BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Email open rate</BodyTitle>
+                <BodyMetric>
+                  {metrics.openRate.toFixed(1)}
+                  %
+                </BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Bounce rate</BodyTitle>
+                <BodyMetric secondary>
+                  {metrics.bounceRate.toFixed(1)}
+                  %
+                </BodyMetric>
+                <WhiteSpace size="sm" />
+                <BodyTitle>Complaint rate</BodyTitle>
+                <BodyMetric secondary>
+                  {metrics.complainRate.toFixed(1)}
+                  %
+                </BodyMetric>
+              </CardBodyContent>
+            </Body>
+          </Card>
+          <WhiteSpace size="lg" />
+        </WingBlank>
+      </MainScrollView>
     </MainView>
   );
 };

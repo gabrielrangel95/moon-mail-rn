@@ -7,6 +7,10 @@ export const MainView = styled.SafeAreaView`
   padding-top: 32px;
 `;
 
+export const MainScrollView = styled.ScrollView`
+  flex: 1;
+`;
+
 export const CardBodyContent = styled.View`
   display: flex;
   flex-direction: column;

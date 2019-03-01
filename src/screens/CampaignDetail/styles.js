@@ -61,6 +61,5 @@ export const CardContentTextBold = styled.Text`
 
 export const CardContentTextNormal = styled.Text`
   font-size: 14px;
-  color: ${colors.regular};
-  text-transform: capitalize;
+  color: ${colors.black};
 `;

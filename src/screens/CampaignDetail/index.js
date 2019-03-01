@@ -167,6 +167,7 @@ class CampaignDetail extends Component {
                 </CardBodyContent>
               </Body>
             </Card>
+            <WhiteSpace size="lg" />
           </WingBlank>
         </MainScrollView>
       </MainView>
