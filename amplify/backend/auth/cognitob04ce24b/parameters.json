@@ -1,0 +1,71 @@
+{
+    "resourceName": "cognitob04ce24b",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "userPoolName": "cognitob04ce24b_userpool_08b3f6cf",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "cognitob04ce24b_sns-role",
+    "roleExternalId": "cognitob04ce24b_role_external_id",
+    "policyName": "cognitob04ce24b-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "cognitob04ce24b_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "cognitob04ce24b_totp_lambda_role",
+    "mfaLambdaLogPolicy": "cognitob04ce24b_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "cognitob04ce24b_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "cognitob04ce24b_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "cognitob04ce24b_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "cognitob04ce24b_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "cognitob04ce24b_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "identityPoolName": "moonmail_identitypool_451ced1e",
+    "allowUnauthenticatedIdentities": false,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "cognitob04ce24b_lambda_log_policy",
+    "openIdLambdaRoleName": "cognitob04ce24b_openid_lambda_role",
+    "openIdRolePolicy": "cognitob04ce24b_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "cognitob04ce24b_openid_lambda_iam_policy",
+    "openIdLogPolicy": "cognitob04ce24b_openid_lambda_log_policy",
+    "useDefault": "default"
+}

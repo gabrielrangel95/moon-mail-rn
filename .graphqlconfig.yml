@@ -1,0 +1,18 @@
+projects:
+  MoonMailTest:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        graphQLApiId: oqbfcvihd5bzbbopsrhv6jtlgy
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: us-east-1
+        maxDepth: 2
+      endpoints:
+        prod: >-
+          https://hrr6wkpdpbffboingwupmjkmqi.appsync-api.us-east-1.amazonaws.com/graphql

@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "moonmail-20190226034142-authRole",
+            "UnauthRoleArn": "arn:aws:iam::118421383674:role/moonmail-20190226034142-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::118421383674:role/moonmail-20190226034142-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "moonmail-20190226034142-deployment",
+            "UnauthRoleName": "moonmail-20190226034142-unauthRole",
+            "StackName": "moonmail-20190226034142",
+            "StackId": "arn:aws:cloudformation:us-east-1:118421383674:stack/moonmail-20190226034142/95613e10-3991-11e9-aca2-0e33f445a498"
+        },
+        "categories": {
+            "auth": {
+                "cognitob04ce24b": {}
+            }
+        }
+    }
+}

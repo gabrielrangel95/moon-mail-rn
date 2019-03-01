@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognitob04ce24b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"moonmail": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
